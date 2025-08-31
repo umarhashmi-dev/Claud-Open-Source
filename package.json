@@ -11,7 +11,7 @@
     "build": "tsc",
     "build:watch": "tsc --watch",
     "start": "node dist/cli/index.js",
-    "dev": "ts-node-esm src/cli/index.ts",
+    "dev": "node --loader ts-node/esm src/cli/index.ts",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint src/**/*.ts",
